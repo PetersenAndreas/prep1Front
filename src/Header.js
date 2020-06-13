@@ -10,6 +10,7 @@ export function Header({isLoggedIn, loginMsg}) {
       {isLoggedIn &&(
       <>    
       <li><NavLink activeClassName="active" to="/external">External</NavLink></li>
+      <li><NavLink activeClassName="active" to="/search">Search</NavLink></li>
         {facade.isAdmin() &&(
         <>    
         <li><NavLink activeClassName="active" to="/admin-page">Admin Page</NavLink></li>
